@@ -7,6 +7,8 @@ A few weeks after starting his new role, Jeremy is approached by upper managemen
 
 Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
 
+## Linear Regression to Predict MPG
+
 ![Mecha Car Linear Model Summery](./image/D1.PNG)
 
 Q1) Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
@@ -15,6 +17,8 @@ Q1) Which variables/coefficients provided a non-random amount of variance to the
 
 - By using the dataset MechaCar_mpg dataset,we can say vehicle_length( p value -5.08e-08) and ground clearence (p value - 5.21e-08) have significant impact on mpg.
 
+- And variables vehicle_weight(p value - 0.0776) and AWD(p-valu - 0.1852) are  seems to be random variables and does not have significant impact on mpg.
+ 
 Q2) Is the slope of the linear model considered to be zero? Why or why not?
 
 - There is significant relationship between independent variables (vehicle length,ground clearence) and the dependent variable (mpg),so the slope is not zero.
@@ -24,7 +28,7 @@ Q3) Does this linear model predict mpg of MechaCar prototypes effectively? Why o
 
  - Methodology : Examin the Multiple R-squared value to indicate how well the regression model approximate real world data points.In most cases, the value will range between 0 and 1 and can be used as a probabilty metric to determine the likehood that future data points will fit the model.
 
- - According to the our summery table  Multiple R-squared valu is 0.7149,so it's greater than 0.7 ,and it means model does an sufficient juob of predicting mpg.
+ - According to the our summery table  Multiple R-squared valu is 0.7149,so it's greater than 0.7 ,and it means model does an sufficient job of predicting mpg.
 
 ### Deliverable2:
 
@@ -40,15 +44,17 @@ Summerize table for All manufacturing lots:
 
 ![Varience for All lots](./image/D2Totalsummery.PNG)
 
-- According to the above summerize for all manifacturing lots varience is 62.29356 is less than 100.
+- According to the above summerize for all manifacturing lots varience is 62.29356 is less than 100.So we can deside ,for all lots current manufactoring data meet the design specification
 
 Summerize table for each manufacturing lot:
 
 ![Varience for each lots](./image/D2lotSummery.PNG)
 
 - Lot 1 and 2 with in design specifications but Lot 3 has varience exceeds specificatiob 100 PSI.
+
 ### Deliverable3:
-Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+
+Perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 t-test results for All lots:
 
@@ -97,11 +103,11 @@ Design a statistical study to compare vehicle performance of the MechaCar vehicl
 
 #### Null hypothisis(H0) and Alternative Hypothisis(Ha)
 
-    H0 - MecharCar's performence (HorsePower) correctly based on key factors.
+    H0 - MecharCar's performence (HorsePower) not correctly based on key factors (dependent variables).
 
-    Ha - Other Manifacturer's (HorsePower) correctly based on key factors. ???
+    Ha -  MecharCar's performence (HorsePower) correctly based on key factors.
 
-#### statistical Tests
+#### Statistical Tests
 
 For this  staticle analysis the statistical test we would used is  Multiple linear regression.
 
